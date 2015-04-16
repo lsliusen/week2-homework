@@ -1,0 +1,11 @@
+<ul>
+    <li>Choose one that you like...</li>
+    <% @gestures.each_with_index do |gesture, n| %>
+        <li> 
+        <a href="/rps_result?gesture=<%= n %>">
+            <%= gesture %>
+        </a>
+        </li>
+    <% end %>
+</ul>
+
